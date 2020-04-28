@@ -1,9 +1,19 @@
 require 'spec_helper'
 
-describe 'GameWindow' do
+describe GameWindow do
   describe '.new' do
+    before { @game = GameWindow.new }
+
     it 'returns a GameWindow object' do
-      expect(GameWindow.new).to be_an_instance_of GameWindow
+      expect(@game).to be_an_instance_of GameWindow
+    end
+
+    it 'sets a default width' do
+      expect(@game.width).to eq 1300
+    end
+
+    it 'sets a default height' do
+      expect(@game.height).to eq 730
     end
   end
 
