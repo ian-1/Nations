@@ -14,10 +14,8 @@ describe 'GameWindow' do
   end
 
   describe '.draw' do
-
   end
 
   describe '.update' do
-
   end
 end

@@ -2,7 +2,7 @@ require 'gosu'
 
 class GameWindow < Gosu::Window
   def initialize
-    super 640, 480
+    super 1366, 768
     self.caption = name
   end
 
@@ -14,6 +14,3 @@ class GameWindow < Gosu::Window
     'Nations'
   end
 end
-
-window = GameWindow.new
-window.show
